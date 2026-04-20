@@ -24,6 +24,14 @@ This is a simple Flask-based API built to practice DevOps concepts.
 
 \- `/time` → Current server time
 
+---
+
+## ⚙️ CI/CD Pipeline
+
+This project uses GitHub Actions to:
+- Automatically install dependencies
+- Run the application
+- Build Docker image on every push
 
 
 \## ▶️ Run Locally
