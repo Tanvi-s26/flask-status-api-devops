@@ -1,28 +1,28 @@
-\# Flask Status API (DevOps Starter)
+# Flask Status API - DevOps Project
 
+This project is a simple Flask-based API built to understand core DevOps concepts.
 
+---
 
-This is a simple Flask-based API built to practice DevOps concepts.
+## 🚀 Features
+- REST API with Flask
+- Docker containerization
+- CI pipeline using GitHub Actions
 
+---
 
+## 📌 Endpoints
+- `/` → Welcome message  
+- `/status` → Application status  
+- `/time` → Current server time  
 
-\## 🚀 Features
+---
 
-\- Home endpoint
+## 🐳 Run with Docker
 
-\- Status check endpoint
-
-\- Current time endpoint
-
-
-
-\## 📌 Endpoints
-
-\- `/` → Welcome message
-
-\- `/status` → Application status
-
-\- `/time` → Current server time
+```bash
+docker build -t flask-status-api .
+docker run -p 5000:5000 flask-status-api
 
 ---
 
@@ -33,21 +33,5 @@ This project uses GitHub Actions to:
 - Run the application
 - Build Docker image on every push
 
-
-\## ▶️ Run Locally
-
-
-
-```bash
-
-pip install -r requirements.txt
-
-python app.py
-
 ---
 
-## 🐳 Run with Docker
-
-```bash
-docker build -t flask-status-api .
-docker run -p 5000:5000 flask-status-api
